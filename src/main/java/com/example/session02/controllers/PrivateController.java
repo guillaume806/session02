@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/private")
 @RequiredArgsConstructor
 public class PrivateController {
-    @GetMapping
+    @GetMapping("/secret1")
     public String getSecretPage1() {
         return "private/secret1";
     }
 
-    @GetMapping
+    @GetMapping("secret2")
     public String getSecretPage2() {
         return "private/secret2";
     }
-    @GetMapping
+    @GetMapping("/secret3")
     public String getSecretPage3() {
         return "private/secret3";
     }
