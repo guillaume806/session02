@@ -14,10 +14,11 @@ public class PrivateController {
         return "private/secret1";
     }
 
+    @GetMapping
     public String getSecretPage2() {
         return "private/secret2";
     }
-
+    @GetMapping
     public String getSecretPage3() {
         return "private/secret3";
     }
